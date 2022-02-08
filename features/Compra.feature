@@ -1,3 +1,4 @@
+@compra_passagem
 Feature: Compra de Passagem Aerea
   # Descreve a compra pelo site blazedemo.com
   # E2E  =End to End = inicio ao fim
@@ -8,18 +9,18 @@ Feature: Compra de Passagem Aerea
     And clico em Find Flights
     Then sou direcionado para a pagina de selecao de voos
     When seleciono o primeiro voo
-    Then sou direcionado para a pgina de pagamento
+    Then sou direcionado para a pagina de pagamento
     When preencho os dados de pagamento
     And clico no botao Purchase Flight
-    Then sou direcionado para a a pagina de confirmacao
+    Then sou direcionado para a pagina de confirmacao
 
 
- Scenario: De Sao Paulo a Roma Compacto
+  Scenario: De Sao Paulo a Roma Compacto
     Given que acesso o site Blazedemo
     When seleciono "São Paolo" para "Rome"
     Then sou direcionado para a pagina de selecao de voos
     When seleciono o primeiro voo
-    Then sou direcionado para a pgina de pagamento
+    Then sou direcionado para a pagina de pagamento
     When preencho os dados de pagamento
     And clico no botao Purchase Flight
-    Then sou direcionado para a a pagina de confirmacao
+    Then sou direcionado para a pagina de confirmacao
